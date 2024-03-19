@@ -24,7 +24,7 @@ public class ResultParser {
         return new Result(person, distance, time);
     }
 
-    private Duration parseTime(String time) {
+    Duration parseTime(String time) {
         var timeParts = time.split(":");
 
         var totalSecond = Integer.valueOf(timeParts[0]) * 60 + Integer.valueOf(timeParts[1]);
